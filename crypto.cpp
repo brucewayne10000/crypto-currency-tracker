@@ -21,7 +21,7 @@ int main() {
 		res = curl_easy_perform(curl);
 		
 		if (res != CURLE_OK) {
-			std::cout << "this shit fucking failed" << std::endl;
+			std::cout << "it failed" << std::endl;
 		}
 		else {
 			json jsonData = json::parse(response);
